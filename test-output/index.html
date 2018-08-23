@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Branch_QA_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Branch QA Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Branch_QA_Suite" class="navigator-link ">
+                    <span>D:\My Documents\Personal\branchautomation\src\main\resources\testNG.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Branch_QA_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Branch_QA_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Branch_QA_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Branch_QA_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Branch_QA_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Branch_QA_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Branch_QA_Suite" class="hide-methods failed suite-Branch_QA_Suite"> (hide)</a> <!-- hide-methods failed suite-Branch_QA_Suite -->
+                      <a href="#" panel-name="suite-Branch_QA_Suite" class="show-methods failed suite-Branch_QA_Suite"> (show)</a> <!-- show-methods failed suite-Branch_QA_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Branch_QA_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Branch_QA_Suite" title="com.branch.qa.testcases.BranchTestCases" class="method navigator-link" hash-for-method="checkEmployeeDetails">checkEmployeeDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Branch_QA_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Branch_QA_Suite" class="panel Branch_QA_Suite">
+          <div class="suite-Branch_QA_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.branch.qa.testcases.BranchTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkEmployeeDetails">
+                  </a> <!-- checkEmployeeDetails -->
+                  <span class="method-name">checkEmployeeDetails</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Either Total employee count, total employee names or total employee departs don&apos;t match with all other tabs expected [{AARON LOPEZ=Engineering, ADAM MICHALSKI=Partner Growth, ADITI VERMA=Data, AGRIM NIGAM=Engineering, AHMED NAWAR=Engineering, ALEX AUSTIN=Co-Founder / CEO, ALEX BAUER=Marketing, AMANDA MASSEY=Marketing, AMARJIT SINGH=Engineering, AMIT TYAGI=Engineering, AMRUTA DESHMUKH=Engineering, ANJALI KUMAR=Marketing, ANKIT SAXENA=Engineering, ANN MASSOUD=Partner Growth, ANUP OSTWAL=Partner Growth, BARRY KEANE=Partner Growth, BRIAN CHANG=Engineering, BRIAN KRING=Data, BRIAN LAW=Partner Growth, BRIAN SPRINGER=Engineering, BURHAN HAILE=Partner Growth, CAT PEREZ=Partner Growth, CATHLEEN HARTGE=Operations, CHRISTOF JARITZ=Partner Growth, CHRISTOPHER CARVALHO=Partner Growth, CLAY JONES=Marketing, COREY FRICKEL=Partner Growth, CYNTHIA CHIANG=Marketing, DANIA REED=Recruiting, DANNY GAMBOA=Partner Growth, DAVID WESTGATE=Engineering, DERRICK STATEN=Engineering, DEVASMITHA REDDY=Marketing, DMITRI GASKIN=Co-Founder / Engineering, EDWARD SMITH=Engineering, ELIZABETH KINSEY=Marketing, EMRE AKSOY=Partner Growth, ERIC GLOVER=Data, ERIC STEIN=Partner Growth, EVAN KAPLAN=Partner Growth, EVGENIY (GENE) HAYDAMAKHA=Engineering, FARIS MOHIUDDIN=Operations, FELIPE NOGUEROL=Partner Growth, FELIX VIALVA=Engineering, GABRIELLE SALGADO=Partner Growth, GARY MACDONOUGH=Partner Growth, GAUTIER DESSE=Partner Growth, GERRIT YNTEMA=Engineering, GOVIND KAVATURI=Marketing, HARISH CHOUDHARY=Data, HEMANTH SRIDHARA ASHALATHA=Engineering, HERMAN NG=Operations, HUBERT CHEN=Engineering, IAN CHAN=Engineering, IGOR GONEBNYY=Partner Growth, JACKIE CHOI=Engineering, JAKE ADAMS=Engineering, JARED BEN-JAMIN=Partner Growth, JAVERIA KHAN=Engineering, JIM TOMCZYK=Partner Growth, JOHN GILHULY=Partner Growth, JON NESETH=Partner Growth, JONAS BAUER=Engineering, JOSEPH GERAGHTY=Partner Growth, JUAN ANDRADE=Engineering, JUD DAGNALL=Engineering, JYOTSNA JAYARAMAN=Data, KAN YU=Data, KAREN LEE=Partner Growth, KELSEY POLEYEFF=Partner Growth, KRISTY WENTZEL=Operations, LILA STROMINGER=Product, MADA SEGHETE=Co-Founder / Marketing, MADELINE BRONSTEIN=Partner Growth, MARC RITTER=Partner Growth, MARSHALL CLARK=Partner Growth, MATEJ HORAVA=Partner Growth, MAURO SINCHE=Partner Growth, MEGAN BEATY=Partner Growth, MICHAEL HINDMAN=Marketing, MICHAEL KWON=Partner Growth, MICHAEL NORDBERG=Engineering, MICHELLE LERNER=Partner Growth, MIKE MOLINET=Co-Founder / COO, MINESH KHER=Engineering, MONICA CUYONG=Recruiting, NATALI RODRIGUEZ=Product, NAVID ZOLFGHARI=Partner Growth, NEIL MA=Engineering, NICOLAS BONNET=Product, NIDHI MIGLANI=Engineering, PATRICK VAN DER STEEN=Partner Growth, PETER LABERGE=Marketing, PRASANNA RAMANUJAM=Engineering, RAHUL SWAMY=Partner growth, RAMSEY PRYOR=Partner Growth, RICARDO ARAVENA=Data, RUBIN SINGH=Engineering, RUI CHEN=Engineering, RUTH M. PARDEE=Engineering, RYAN CHURAMAN=Engineering, SAHIL VERMA=Engineering, SALOME SHAH=Operations, SAMIT SAWANT=Engineering, SARAH JIMENEZ=Operations, SCOTT DINN=Engineering, SHELBY SIMS=Partner Growth, SHUBHAM MISHRA=Partner Growth, SOJAN PR=Engineering, STACY OSORIO=Partner Growth, STAS ZHUKOVSKIY=Partner Growth, STELLA JU=Marketing, STEPHEN DANIELS=Partner Growth, TAE KIM=Partner Growth, TAMARA SCHROEDER=Marketing, TAREK TANTAWY=Partner Growth, THIBAUT SOUYRIS=Partner Growth, THOMAS QUINLAN=Partner growth, TIM CHINGOS=Partner Growth, TRACY TRUONG=Partner Growth, VIKRAM PRAKASH=Partner Growth, WILL BOOZ=Partner Growth, WILL LINDEMANN=Product, XIAN CHEN=Marketing, YURY USTSINCHYK=Engineering, ZEESHA CURRIMBHOY=Engineering}] but found [{AARON LOPEZ=Engineering, ADAM MICHALSKI=Partner Growth, ADITI VERMA=Data, AGRIM NIGAM=Engineering, AHMED NAWAR=Engineering, ALEX AUSTIN=Co-Founder / CEO, ALEX BAUER=Marketing, AMANDA GRADY=Partner Growth, AMANDA MASSEY=Marketing, AMANDA VANDIVER=Partner Growth, AMARJIT SINGH=Engineering, AMIT TYAGI=Engineering, AMRUTA DESHMUKH=Engineering, ANJALI KUMAR=Marketing, ANKIT SAXENA=Engineering, ANN MASSOUD=Partner Growth, ANUP OSTWAL=Partner Growth, BARRY KEANE=Partner Growth, BRIAN CHANG=Engineering, BRIAN KRING=Data, BRIAN LAW=Partner Growth, BRIAN SPRINGER=Engineering, BURHAN HAILE=Partner Growth, CAT PEREZ=Partner Growth, CATHLEEN HARTGE=Operations, CHRISTOF JARITZ=Partner Growth, CHRISTOPHER CARVALHO=Partner Growth, CLAY JONES=Marketing, COREY FRICKEL=Partner Growth, CYNTHIA CHIANG=Marketing, DANIA REED=Recruiting, DANNY GAMBOA=Partner Growth, DAVID WESTGATE=Engineering, DERRICK STATEN=Engineering, DEVASMITHA REDDY=Marketing, DMITRI GASKIN=Co-Founder / Engineering, EDWARD SMITH=Engineering, ELIZABETH KINSEY=Marketing, EMRE AKSOY=Partner Growth, ERIC GLOVER=Data, ERIC STEIN=Partner Growth, EVAN KAPLAN=Partner Growth, EVGENIY (GENE) HAYDAMAKHA=Engineering, FARIS MOHIUDDIN=Operations, FELIPE NOGUEROL=Partner Growth, FELIX VIALVA=Engineering, GABRIELLE SALGADO=Partner Growth, GARY MACDONOUGH=Partner Growth, GAUTIER DESSE=Partner Growth, GERRIT YNTEMA=Engineering, GOVIND KAVATURI=Marketing, HARISH CHOUDHARY=Data, HEMANTH SRIDHARA ASHALATHA=Engineering, HERMAN NG=Operations, HUBERT CHEN=Engineering, IAN CHAN=Engineering, IGOR GONEBNYY=Partner Growth, JACKIE CHOI=Engineering, JAKE ADAMS=Engineering, JARED BEN-JAMIN=Partner Growth, JAVERIA KHAN=Engineering, JIM TOMCZYK=Partner Growth, JOHN GILHULY=Partner Growth, JON NESETH=Partner Growth, JONAS BAUER=Engineering, JOSEPH GERAGHTY=Partner Growth, JUAN ANDRADE=Engineering, JUD DAGNALL=Engineering, JYOTSNA JAYARAMAN=Data, KAN YU=Data, KAREN LEE=Partner Growth, KELSEY POLEYEFF=Partner Growth, KRISTY WENTZEL=Operations, LILA STROMINGER=Product, MADA SEGHETE=Co-Founder / Marketing, MADELINE BRONSTEIN=Partner Growth, MARC RITTER=Partner Growth, MARK WEILER=Engineering, MARSHALL CLARK=Partner Growth, MATEJ HORAVA=Partner Growth, MAURO SINCHE=Partner Growth, MEGAN BEATY=Partner Growth, MICHAEL HINDMAN=Marketing, MICHAEL KWON=Partner Growth, MICHAEL NORDBERG=Engineering, MICHELLE LERNER=Partner Growth, MIKE MOLINET=Co-Founder / COO, MINESH KHER=Engineering, MONICA CUYONG=Recruiting, NATALI RODRIGUEZ=Product, NAVID ZOLFGHARI=Partner Growth, NEIL MA=Engineering, NICOLAS BONNET=Product, NIDHI MIGLANI=Engineering, PATRICK VAN DER STEEN=Partner Growth, PETER LABERGE=Marketing, PRASANNA RAMANUJAM=Engineering, RAHUL SWAMY=Partner growth, RAMSEY PRYOR=Partner Growth, RICARDO ARAVENA=Data, RUBIN SINGH=Engineering, RUI CHEN=Engineering, RUTH M. PARDEE=Engineering, RYAN CHURAMAN=Engineering, SAHIL VERMA=Engineering, SALOME SHAH=Operations, SAMIT SAWANT=Engineering, SARAH JIMENEZ=Operations, SCOTT DINN=Engineering, SHELBY SIMS=Partner Growth, SHUBHAM MISHRA=Partner Growth, SOJAN PR=Engineering, STACY OSORIO=Partner Growth, STAS ZHUKOVSKIY=Partner Growth, STELLA JU=Marketing, STEPHEN DANIELS=Partner Growth, TAE KIM=Partner Growth, TAMARA SCHROEDER=Marketing, TAREK TANTAWY=Partner Growth, THIBAUT SOUYRIS=Partner Growth, THOMAS QUINLAN=Partner growth, TIM CHINGOS=Partner Growth, TRACY TRUONG=Partner Growth, VATSAL BAJPAI=Engineering, VIKRAM PRAKASH=Partner Growth, WILL BOOZ=Partner Growth, WILL LINDEMANN=Product, XIAN CHEN=Marketing, YEN HOANG=Engineering, YURY USTSINCHYK=Engineering, ZEESHA CURRIMBHOY=Engineering}]
+	at com.branch.qa.testcases.BranchTestCases.checkEmployeeDetails(BranchTestCases.java:56)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify that number of employees, employee names, employee designations match between All tab and sum of other tabs)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Branch_QA_Suite-class-failed -->
+        </div> <!-- panel Branch_QA_Suite -->
+        <div panel-name="test-xml-Branch_QA_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\My Documents\Personal\branchautomation\src\main\resources\testNG.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Branch QA Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Team-Module Test Cases&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.branch.qa.testcases.BranchTestCases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Team-Module Test Cases --&gt;
+&lt;/suite&gt; &lt;!-- Branch QA Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Branch_QA_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Branch QA Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Team-Module Test Cases (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Branch_QA_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Branch QA Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Branch_QA_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Branch QA Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Branch_QA_Suite');
+function tableData_Branch_QA_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'checkEmployeeDetails')
+data.setCell(0, 2, 'com.branch.qa.testcases.BranchTestCases')
+data.setCell(0, 3, 24379);
+window.suiteTableData['Branch_QA_Suite']= { tableData: data, tableDiv: 'times-div-Branch_QA_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
+              <div id="times-div-Branch_QA_Suite">
+              </div> <!-- times-div-Branch_QA_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Branch_QA_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Branch QA Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Branch_QA_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Branch_QA_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.branch.qa.testcases.BranchTestCases</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkEmployeeDetails</span>
+                <span class="method-start">14710 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">39111 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Branch QA Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Team-Module Test Cases(failed)">
+    <classes>
+      <class name="com.branch.qa.testcases.BranchTestCases">
+        <methods>
+          <include name="initialize"/>
+          <include name="closeBrowser"/>
+          <include name="checkEmployeeDetails"/>
+        </methods>
+      </class> <!-- com.branch.qa.testcases.BranchTestCases -->
+    </classes>
+  </test> <!-- Team-Module Test Cases(failed) -->
+</suite> <!-- Failed suite [Branch QA Suite] -->
